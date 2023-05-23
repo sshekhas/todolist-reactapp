@@ -110,7 +110,7 @@ const LoginForm = () => {
             }}
             className="font-medium text-purple-600 hover:text-purple-500"
           >
-            {signUp ? "Sign In" : "Sign up"}
+            {signUp ? "Sign In" : "Sign Up"}
           </button>
         </p>
       </div>
@@ -245,7 +245,7 @@ const LoginForm = () => {
                 }}
                 className="font-medium text-purple-600 hover:text-purple-500 h-8"
               >
-                get strong password
+                Get strong password
               </button>
             )}
             <Form.Item
@@ -292,7 +292,7 @@ const LoginForm = () => {
             loading={loading}
             className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-purple-500 mt-10"
           >
-            {signUp ? "Register" : "Sign In"}
+            {signUp ? "Register and Sign Up" : "Sign In"}
           </button>
         </Form.Item>
       </Form>

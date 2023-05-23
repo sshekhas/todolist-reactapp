@@ -71,7 +71,10 @@ const AccountData = () => {
           )}
           <span className="mt-6 block pt-4 border-t-slate-200 dark:border-t-slate-700/[.3] border-t-2"></span>
           <Button
-            onClick={() => setIsModalShown(true)}
+            onClick={() => {
+              toggleShowAccountBar();
+              setIsModalShown(true);
+            }}
             className="mt-auto"
             type="primary"
             danger
@@ -83,7 +86,10 @@ const AccountData = () => {
       <div style={{ position: "fixed", top: 0, left: 0 }}>
         {showModal && (
           <ModalConfirm
-            onClose={() => setIsModalShown(false)}
+            onClose={() => {
+              setIsModalShown(false);
+              toggleShowAccountBar();
+            }}
             text=""
             onConfirm={handleLogout}
           />
